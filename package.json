@@ -1,1 +1,39 @@
-{     "devDependencies": {         "lazo": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-lazo",     "homepage": "https://github.com/npmdoc/node-npmdoc-lazo",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-lazo.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [lazo (v3.0.1)](https://github.com/lazojs/lazo) [![npm package](https://img.shields.io/npm/v/npmdoc-lazo.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-lazo) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-lazo.svg)](https://travis-ci.org/npmdoc/node-npmdoc-lazo)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "lazo": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-lazo",
+    "keywords": [
+        "documentation",
+        "lazo"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_lazo.js",
+    "name": "npmdoc-lazo",
+    "nameAlias": "npmdoc_lazo",
+    "nameOriginal": "npmdoc-lazo",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-lazo.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
