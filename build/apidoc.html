@@ -1,0 +1,864 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/lazojs/lazo"
+
+    >lazo (v3.0.1)</a>
+</h1>
+<h4>A client-server web framework built on Node.js that allows front-end developers to easily create a 100% SEO compliant, component MVC structured web application with an optimized first page load.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.lazo">module lazo</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lazo.lazo">
+            function <span class="apidocSignatureSpan"></span>lazo
+            <span class="apidocSignatureSpan">(cmd, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lazo.Gruntfile">
+            function <span class="apidocSignatureSpan">lazo.</span>Gruntfile
+            <span class="apidocSignatureSpan">(grunt)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lazo.run">
+            function <span class="apidocSignatureSpan">lazo.</span>run
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lazo.start">
+            function <span class="apidocSignatureSpan">lazo.</span>start
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lazo.stop">
+            function <span class="apidocSignatureSpan">lazo.</span>stop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lazo.toString">
+            function <span class="apidocSignatureSpan">lazo.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lazo.version">
+            function <span class="apidocSignatureSpan">lazo.</span>version
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.lazo.Gruntfile">module lazo.Gruntfile</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lazo.Gruntfile.Gruntfile">
+            function <span class="apidocSignatureSpan">lazo.</span>Gruntfile
+            <span class="apidocSignatureSpan">(grunt)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.lazo.run">module lazo.run</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lazo.run.run">
+            function <span class="apidocSignatureSpan">lazo.</span>run
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.lazo.start">module lazo.start</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lazo.start.start">
+            function <span class="apidocSignatureSpan">lazo.</span>start
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.lazo.stop">module lazo.stop</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lazo.stop.stop">
+            function <span class="apidocSignatureSpan">lazo.</span>stop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.lazo.toString">module lazo.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lazo.toString.toString">
+            function <span class="apidocSignatureSpan">lazo.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.lazo.version">module lazo.version</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lazo.version.version">
+            function <span class="apidocSignatureSpan">lazo.</span>version
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.lazo" id="apidoc.module.lazo">module lazo</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.lazo.lazo" id="apidoc.element.lazo.lazo">
+        function <span class="apidocSignatureSpan"></span>lazo
+        <span class="apidocSignatureSpan">(cmd, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">lazo = function (cmd, options) {
+    if (cmd === &#x27;version&#x27;) {
+        return commands.version();
+    }
+
+    commands[cmd](_.extend(options || {}, { version: commands.version() }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lazo.Gruntfile" id="apidoc.element.lazo.Gruntfile">
+        function <span class="apidocSignatureSpan">lazo.</span>Gruntfile
+        <span class="apidocSignatureSpan">(grunt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Gruntfile = function (grunt) {
+
+    var fs = require(&#x27;fs&#x27;);
+    var path = require(&#x27;path&#x27;);
+    var reqConf = grunt.file.readJSON(&#x27;lib/common/resolver/paths.json&#x27;);
+    var lazoReqConf = grunt.file.readJSON(&#x27;conf.json&#x27;);
+
+    function getPaths(conf, env) {
+        var paths = grunt.util._.extend({}, conf.common, (conf[env] || conf.client));
+        for (var key in paths) {
+            paths[key] = paths[key].replace(&#x27;{env}&#x27;, (env || &#x27;client&#x27;));
+        }
+
+        return paths;
+    }
+
+    grunt.registerTask(&#x27;configure-intern&#x27;, &#x27;Create intern configuration for runner&#x27;, function () {
+        var env = this.args[0] === &#x27;client-local&#x27; ? &#x27;client&#x27; : this.args[0];
+        var paths = getPaths(reqConf, env);
+        var specs = grunt.file.expand([
+            &#x27;test/unit/&#x27; + env + &#x27;/**/*.js&#x27;,
+            &#x27;test/unit/client-server/**/*.js&#x27;,
+            &#x27;!**/*.skip.js&#x27;
+        ]);
+        specs = specs.map(function (spec) {
+            return spec.substr(0, spec.lastIndexOf(&#x27;.js&#x27;));
+        });
+        var conf = grunt.config.get(&#x27;intern&#x27;);
+        conf[this.args[0]].options.suites = specs;
+        if (env === &#x27;client&#x27; &#x26;&#x26; this.args[0] !== &#x27;client-local&#x27;) {
+            conf[this.args[0]].options.config = &#x27;test/unit/conf.client.phantomjs&#x27;;
+        }
+
+        grunt.config.set(&#x27;intern&#x27;, conf);
+    });
+
+    // ci and local; if local or unsecure pull request uses phantomjs and selenium;
+    // if secure pull request then it uses sauce labs
+    grunt.registerTask(&#x27;test&#x27;, [&#x27;test-server&#x27;, &#x27;test-client&#x27;]);
+    // local
+    grunt.registerTask(&#x27;test-local&#x27;, [&#x27;test-server&#x27;, &#x27;test-client-local&#x27;]);
+
+    grunt.registerTask(&#x27;test-server&#x27;, [&#x27;configure-intern:server&#x27;, &#x27;intern:server&#x27;]);
+    grunt.registerTask(&#x27;test-client&#x27;, function () {
+        var tasks = [&#x27;configure-intern:client&#x27;, &#x27;intern:client&#x27;];
+
+        // running locally; ci starts selenium before testing
+        if (!process.env.TRAVIS) {
+            tasks.unshift(&#x27;exec:selenium-server&#x27;);
+        }
+
+        grunt.task.run(tasks);
+    });
+
+    grunt.registerTask(&#x27;test-client-local&#x27;, [&#x27;exec:selenium-server&#x27;, &#x27;configure-intern:client-local&#x27;, &#x27;intern:client-local&#x27;]);
+
+    grunt.initConfig({
+
+        requirejs: {
+            compile: {
+                options: {
+                    include: reqConf.lib,
+                    paths: getPaths(reqConf),
+                    shim: lazoReqConf.requirejs.client.shim,
+                    map: {
+                        &#x27;*&#x27;: {
+                            &#x27;l&#x27;: &#x27;/lib/client/loader.js&#x27;,
+                            // don&#x27;t define &#x27;bundler&#x27; in paths.json because
+                            // it will result in a build error due to
+                            // duplicate paths; &#x27;bundler&#x27; path is set at run time
+                            &#x27;bundler&#x27;: &#x27;lazoBundle&#x27;
+                        }
+                    },
+                    outFileName: &#x27;lib&#x27;,
+                    baseUrl:  path.resolve(&#x27;.&#x27;),
+                    optimize: &#x27;uglify2&#x27;,
+                    logLevel: 4,
+                    out: &#x27;lib/optimized/lib.js&#x27;
+                }
+            }
+        },
+
+        watch: {
+            test: {
+                files: [&#x27;lib/**/*.*&#x27;, &#x27;!lib/vendor/**/*.*&#x27;],
+                tasks: [&#x27;castle&#x27;],
+                options: {
+                    events: [&#x27;changed&#x27;]
+                }
+            },
+            lib: {
+                files: [&#x27;lib/**/*.*&#x27;, &#x27;!lib/**/server/**/*.*&#x27;, &#x27;!lib/vendor/**/*.*&#x27;],
+                tasks: [&#x27;requirejs&#x27;]
+            }
+        },
+
+        intern: {
+            &#x27;client-local&#x27;: {
+                options: {
+                    runType: &#x27;runner&#x27;,
+                    config: &#x27;test/unit/conf.client.local&#x27;
+                }
+            },
+            client: {
+                options: {
+                    runType: &#x27;runner&#x27;,
+                    config: &#x27;test/unit/conf.client&#x27;
+                }
+            },
+            server: {
+                options: {
+                    config: &#x27;test/unit/conf.server&#x27;
+                }
+            }
+        },
+
+        exec: { &#x27;selenium-server&#x27;: &#x27;node node_modules/selenium-server/bin/selenium &#x26;&#x27; }
+
+    });
+
+    grunt.lo ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lazo.run" id="apidoc.element.lazo.run">
+        function <span class="apidocSignatureSpan">lazo.</span>run
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function main() {
+    if (args._.length) {
+        switch (args._[0]) {
+            case &#x27;start&#x27;:
+                args.app_dir = getAppDir();
+                lazo(&#x27;start&#x27;, args);
+                break;
+            case &#x27;stop&#x27;:
+                lazo(&#x27;stop&#x27;, args);
+                break;
+            default:
+                help();
+                break;
+        }
+    } else {
+        if (args.version) {
+            console.log(&#x27;v&#x27; + lazo(&#x27;version&#x27;));
+        } else if (args.help) {
+            help(args.help);
+        } else {
+            help();
+        }
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var tasks = [&#x27;configure-intern:client&#x27;, &#x27;intern:client&#x27;];
+
+// running locally; ci starts selenium before testing
+if (!process.env.TRAVIS) {
+    tasks.unshift(&#x27;exec:selenium-server&#x27;);
+}
+
+grunt.task.<span class="apidocCodeKeywordSpan">run</span>(tasks);
+    });
+
+    grunt.registerTask(&#x27;test-client-local&#x27;, [&#x27;exec:selenium-server&#x27;, &#x27;configure-intern:client-local&#x27
+;, &#x27;intern:client-local&#x27;]);
+
+    grunt.initConfig({
+
+requirejs: {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lazo.start" id="apidoc.element.lazo.start">
+        function <span class="apidocSignatureSpan">lazo.</span>start
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">start = function (options) {
+    setEnv(options);
+    if (options.daemon) {
+        return daemon();
+    }
+
+    console.log(&#x27;Starting Lazo! Please wait...&#x27;);
+    // starts application server
+    var lazo = require(&#x27;./lib/server/app.js&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lazo.stop" id="apidoc.element.lazo.stop">
+        function <span class="apidocSignatureSpan">lazo.</span>stop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stop = function () {
+    var forever = require(&#x27;forever&#x27;);
+    var fsx = require(&#x27;fs-extra&#x27;);
+
+    if (fsx.existsSync(lazoPath + &#x27;/lazo.pid&#x27;)) {
+        try {
+            forever.stop(&#x27;lib/server/app.js&#x27;, true);
+            forever.cleanUp();
+            fsx.remove(lazoPath + &#x27;/lazo.pid&#x27;);
+            console.log(&#x27;Lazo! stopped&#x27;);
+        } catch (err) {
+            console.log(&#x27;Error stopping Lazo!&#x27;);
+            process.exit(1);
+        }
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+module.exports = function () {
+var forever = require(&#x27;forever&#x27;);
+var fsx = require(&#x27;fs-extra&#x27;);
+
+if (fsx.existsSync(lazoPath + &#x27;/lazo.pid&#x27;)) {
+    try {
+        forever.<span class="apidocCodeKeywordSpan">stop</span>(&#x27;lib/server/app.js&#x27;, true);
+        forever.cleanUp();
+        fsx.remove(lazoPath + &#x27;/lazo.pid&#x27;);
+        console.log(&#x27;Lazo! stopped&#x27;);
+    } catch (err) {
+        console.log(&#x27;Error stopping Lazo!&#x27;);
+        process.exit(1);
+    }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lazo.toString" id="apidoc.element.lazo.toString">
+        function <span class="apidocSignatureSpan">lazo.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.lazo.version" id="apidoc.element.lazo.version">
+        function <span class="apidocSignatureSpan">lazo.</span>version
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">version = function () {
+    var path = require(&#x27;path&#x27;);
+    var fs = require(&#x27;fs&#x27;);
+    var lazoPath = path.dirname(module.filename);
+    var packageJson = JSON.parse(fs.readFileSync(path.normalize(lazoPath + &#x27;/package.json&#x27;), &#x27;utf8&#x27;));
+    return &#x27;v&#x27; + packageJson.version;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    start: require(&#x27;./start&#x27;),
+    stop: require(&#x27;./stop&#x27;),
+    version: require(&#x27;./version&#x27;)
+}
+
+module.exports = function (cmd, options) {
+    if (cmd === &#x27;version&#x27;) {
+        return commands.<span class="apidocCodeKeywordSpan">version</span>();
+    }
+
+    commands[cmd](_.extend(options || {}, { version: commands.version() }));
+};
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.lazo.Gruntfile" id="apidoc.module.lazo.Gruntfile">module lazo.Gruntfile</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.lazo.Gruntfile.Gruntfile" id="apidoc.element.lazo.Gruntfile.Gruntfile">
+        function <span class="apidocSignatureSpan">lazo.</span>Gruntfile
+        <span class="apidocSignatureSpan">(grunt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Gruntfile = function (grunt) {
+
+    var fs = require(&#x27;fs&#x27;);
+    var path = require(&#x27;path&#x27;);
+    var reqConf = grunt.file.readJSON(&#x27;lib/common/resolver/paths.json&#x27;);
+    var lazoReqConf = grunt.file.readJSON(&#x27;conf.json&#x27;);
+
+    function getPaths(conf, env) {
+        var paths = grunt.util._.extend({}, conf.common, (conf[env] || conf.client));
+        for (var key in paths) {
+            paths[key] = paths[key].replace(&#x27;{env}&#x27;, (env || &#x27;client&#x27;));
+        }
+
+        return paths;
+    }
+
+    grunt.registerTask(&#x27;configure-intern&#x27;, &#x27;Create intern configuration for runner&#x27;, function () {
+        var env = this.args[0] === &#x27;client-local&#x27; ? &#x27;client&#x27; : this.args[0];
+        var paths = getPaths(reqConf, env);
+        var specs = grunt.file.expand([
+            &#x27;test/unit/&#x27; + env + &#x27;/**/*.js&#x27;,
+            &#x27;test/unit/client-server/**/*.js&#x27;,
+            &#x27;!**/*.skip.js&#x27;
+        ]);
+        specs = specs.map(function (spec) {
+            return spec.substr(0, spec.lastIndexOf(&#x27;.js&#x27;));
+        });
+        var conf = grunt.config.get(&#x27;intern&#x27;);
+        conf[this.args[0]].options.suites = specs;
+        if (env === &#x27;client&#x27; &#x26;&#x26; this.args[0] !== &#x27;client-local&#x27;) {
+            conf[this.args[0]].options.config = &#x27;test/unit/conf.client.phantomjs&#x27;;
+        }
+
+        grunt.config.set(&#x27;intern&#x27;, conf);
+    });
+
+    // ci and local; if local or unsecure pull request uses phantomjs and selenium;
+    // if secure pull request then it uses sauce labs
+    grunt.registerTask(&#x27;test&#x27;, [&#x27;test-server&#x27;, &#x27;test-client&#x27;]);
+    // local
+    grunt.registerTask(&#x27;test-local&#x27;, [&#x27;test-server&#x27;, &#x27;test-client-local&#x27;]);
+
+    grunt.registerTask(&#x27;test-server&#x27;, [&#x27;configure-intern:server&#x27;, &#x27;intern:server&#x27;]);
+    grunt.registerTask(&#x27;test-client&#x27;, function () {
+        var tasks = [&#x27;configure-intern:client&#x27;, &#x27;intern:client&#x27;];
+
+        // running locally; ci starts selenium before testing
+        if (!process.env.TRAVIS) {
+            tasks.unshift(&#x27;exec:selenium-server&#x27;);
+        }
+
+        grunt.task.run(tasks);
+    });
+
+    grunt.registerTask(&#x27;test-client-local&#x27;, [&#x27;exec:selenium-server&#x27;, &#x27;configure-intern:client-local&#x27;, &#x27;intern:client-local&#x27;]);
+
+    grunt.initConfig({
+
+        requirejs: {
+            compile: {
+                options: {
+                    include: reqConf.lib,
+                    paths: getPaths(reqConf),
+                    shim: lazoReqConf.requirejs.client.shim,
+                    map: {
+                        &#x27;*&#x27;: {
+                            &#x27;l&#x27;: &#x27;/lib/client/loader.js&#x27;,
+                            // don&#x27;t define &#x27;bundler&#x27; in paths.json because
+                            // it will result in a build error due to
+                            // duplicate paths; &#x27;bundler&#x27; path is set at run time
+                            &#x27;bundler&#x27;: &#x27;lazoBundle&#x27;
+                        }
+                    },
+                    outFileName: &#x27;lib&#x27;,
+                    baseUrl:  path.resolve(&#x27;.&#x27;),
+                    optimize: &#x27;uglify2&#x27;,
+                    logLevel: 4,
+                    out: &#x27;lib/optimized/lib.js&#x27;
+                }
+            }
+        },
+
+        watch: {
+            test: {
+                files: [&#x27;lib/**/*.*&#x27;, &#x27;!lib/vendor/**/*.*&#x27;],
+                tasks: [&#x27;castle&#x27;],
+                options: {
+                    events: [&#x27;changed&#x27;]
+                }
+            },
+            lib: {
+                files: [&#x27;lib/**/*.*&#x27;, &#x27;!lib/**/server/**/*.*&#x27;, &#x27;!lib/vendor/**/*.*&#x27;],
+                tasks: [&#x27;requirejs&#x27;]
+            }
+        },
+
+        intern: {
+            &#x27;client-local&#x27;: {
+                options: {
+                    runType: &#x27;runner&#x27;,
+                    config: &#x27;test/unit/conf.client.local&#x27;
+                }
+            },
+            client: {
+                options: {
+                    runType: &#x27;runner&#x27;,
+                    config: &#x27;test/unit/conf.client&#x27;
+                }
+            },
+            server: {
+                options: {
+                    config: &#x27;test/unit/conf.server&#x27;
+                }
+            }
+        },
+
+        exec: { &#x27;selenium-server&#x27;: &#x27;node node_modules/selenium-server/bin/selenium &#x26;&#x27; }
+
+    });
+
+    grunt.lo ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.lazo.run" id="apidoc.module.lazo.run">module lazo.run</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.lazo.run.run" id="apidoc.element.lazo.run.run">
+        function <span class="apidocSignatureSpan">lazo.</span>run
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function main() {
+    if (args._.length) {
+        switch (args._[0]) {
+            case &#x27;start&#x27;:
+                args.app_dir = getAppDir();
+                lazo(&#x27;start&#x27;, args);
+                break;
+            case &#x27;stop&#x27;:
+                lazo(&#x27;stop&#x27;, args);
+                break;
+            default:
+                help();
+                break;
+        }
+    } else {
+        if (args.version) {
+            console.log(&#x27;v&#x27; + lazo(&#x27;version&#x27;));
+        } else if (args.help) {
+            help(args.help);
+        } else {
+            help();
+        }
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var tasks = [&#x27;configure-intern:client&#x27;, &#x27;intern:client&#x27;];
+
+// running locally; ci starts selenium before testing
+if (!process.env.TRAVIS) {
+    tasks.unshift(&#x27;exec:selenium-server&#x27;);
+}
+
+grunt.task.<span class="apidocCodeKeywordSpan">run</span>(tasks);
+    });
+
+    grunt.registerTask(&#x27;test-client-local&#x27;, [&#x27;exec:selenium-server&#x27;, &#x27;configure-intern:client-local&#x27
+;, &#x27;intern:client-local&#x27;]);
+
+    grunt.initConfig({
+
+requirejs: {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.lazo.start" id="apidoc.module.lazo.start">module lazo.start</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.lazo.start.start" id="apidoc.element.lazo.start.start">
+        function <span class="apidocSignatureSpan">lazo.</span>start
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">start = function (options) {
+    setEnv(options);
+    if (options.daemon) {
+        return daemon();
+    }
+
+    console.log(&#x27;Starting Lazo! Please wait...&#x27;);
+    // starts application server
+    var lazo = require(&#x27;./lib/server/app.js&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.lazo.stop" id="apidoc.module.lazo.stop">module lazo.stop</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.lazo.stop.stop" id="apidoc.element.lazo.stop.stop">
+        function <span class="apidocSignatureSpan">lazo.</span>stop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">stop = function () {
+    var forever = require(&#x27;forever&#x27;);
+    var fsx = require(&#x27;fs-extra&#x27;);
+
+    if (fsx.existsSync(lazoPath + &#x27;/lazo.pid&#x27;)) {
+        try {
+            forever.stop(&#x27;lib/server/app.js&#x27;, true);
+            forever.cleanUp();
+            fsx.remove(lazoPath + &#x27;/lazo.pid&#x27;);
+            console.log(&#x27;Lazo! stopped&#x27;);
+        } catch (err) {
+            console.log(&#x27;Error stopping Lazo!&#x27;);
+            process.exit(1);
+        }
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+module.exports = function () {
+var forever = require(&#x27;forever&#x27;);
+var fsx = require(&#x27;fs-extra&#x27;);
+
+if (fsx.existsSync(lazoPath + &#x27;/lazo.pid&#x27;)) {
+    try {
+        forever.<span class="apidocCodeKeywordSpan">stop</span>(&#x27;lib/server/app.js&#x27;, true);
+        forever.cleanUp();
+        fsx.remove(lazoPath + &#x27;/lazo.pid&#x27;);
+        console.log(&#x27;Lazo! stopped&#x27;);
+    } catch (err) {
+        console.log(&#x27;Error stopping Lazo!&#x27;);
+        process.exit(1);
+    }
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.lazo.toString" id="apidoc.module.lazo.toString">module lazo.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.lazo.toString.toString" id="apidoc.element.lazo.toString.toString">
+        function <span class="apidocSignatureSpan">lazo.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.lazo.version" id="apidoc.module.lazo.version">module lazo.version</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.lazo.version.version" id="apidoc.element.lazo.version.version">
+        function <span class="apidocSignatureSpan">lazo.</span>version
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">version = function () {
+    var path = require(&#x27;path&#x27;);
+    var fs = require(&#x27;fs&#x27;);
+    var lazoPath = path.dirname(module.filename);
+    var packageJson = JSON.parse(fs.readFileSync(path.normalize(lazoPath + &#x27;/package.json&#x27;), &#x27;utf8&#x27;));
+    return &#x27;v&#x27; + packageJson.version;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    start: require(&#x27;./start&#x27;),
+    stop: require(&#x27;./stop&#x27;),
+    version: require(&#x27;./version&#x27;)
+}
+
+module.exports = function (cmd, options) {
+    if (cmd === &#x27;version&#x27;) {
+        return commands.<span class="apidocCodeKeywordSpan">version</span>();
+    }
+
+    commands[cmd](_.extend(options || {}, { version: commands.version() }));
+};
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
