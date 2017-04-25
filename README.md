@@ -1,4 +1,7 @@
-# api documentation for  [lazo (v3.0.1)](https://github.com/lazojs/lazo)  [![npm package](https://img.shields.io/npm/v/npmdoc-lazo.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-lazo) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-lazo.svg)](https://travis-ci.org/npmdoc/node-npmdoc-lazo)
+# npmdoc-lazo
+
+#### basic api documentation for  [lazo (v3.0.1)](https://github.com/lazojs/lazo)  [![npm package](https://img.shields.io/npm/v/npmdoc-lazo.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-lazo) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-lazo.svg)](https://travis-ci.org/npmdoc/node-npmdoc-lazo)
+
 #### A client-server web framework built on Node.js that allows front-end developers to easily create a 100% SEO compliant, component MVC structured web application with an optimized first page load.
 
 [![NPM](https://nodei.co/npm/lazo.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/lazo)
